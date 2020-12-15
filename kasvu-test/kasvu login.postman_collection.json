@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "e1f001d5-2839-4bd9-93da-43082cb6732d",
+		"name": "kasvu login",
+		"description": "kasvuprojektin apin testejä",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login as student",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"matti.mallioppilas@edu.hel.fi\",\n    \"password\" : \"salasana\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"login",
+						""
+					]
+				},
+				"description": "this is a successful login for a student"
+			},
+			"response": []
+		},
+		{
+			"name": "login as instructor",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"matti.mallioppilas@edu.hel.fi\",\n    \"password\" : \"salasana\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"login",
+						""
+					]
+				},
+				"description": "this is a successful login for a student"
+			},
+			"response": []
+		},
+		{
+			"name": "login with a bad password",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"matti.mallioppilas@edu.hel.fi\",\n    \"password\" : \"salasana\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"login",
+						""
+					]
+				},
+				"description": "this is a successful login for a student"
+			},
+			"response": []
+		},
+		{
+			"name": "login as non-existent user",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"matti.mallioppilas@edu.hel.fi\",\n    \"password\" : \"salasana\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"login",
+						""
+					]
+				},
+				"description": "this is a successful login for a student"
+			},
+			"response": []
+		},
+		{
+			"name": "login with missing password",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"matti.mallioppilas@edu.hel.fi\",\n    \"password\" : \"salasana\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"login",
+						""
+					]
+				},
+				"description": "this is a successful login for a student"
+			},
+			"response": []
+		},
+		{
+			"name": "login with missing email",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"matti.mallioppilas@edu.hel.fi\",\n    \"password\" : \"salasana\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"login",
+						""
+					]
+				},
+				"description": "this is a successful login for a student"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

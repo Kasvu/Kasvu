@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "8ad49122-d68e-402f-8895-f35ddb5c815d",
+		"name": "kasvu teacher",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login as teacher",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"olli.opettaja@edu.hel.fi\",\n    \"password\" : \"salasana\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"login",
+						""
+					]
+				},
+				"description": "this is a successful login for a student"
+			},
+			"response": []
+		},
+		{
+			"name": "get students per teacher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "a logged in teacher gets a list of their students"
+			},
+			"response": []
+		},
+		{
+			"name": "get assignments per student & criteria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/teacher/getAssignmentsForStudentAndCriteria/?criteria=1&student=2",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"teacher",
+						"getAssignmentsForStudentAndCriteria",
+						""
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "1"
+						},
+						{
+							"key": "student",
+							"value": "2"
+						}
+					]
+				},
+				"description": "a logged in teacher gets a list of their students"
+			},
+			"response": []
+		},
+		{
+			"name": "add problem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"criteria_id\": \"2\",\n    \"text\": \"testiteksti\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/teacher/addProblem",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"teacher",
+						"addProblem"
+					]
+				},
+				"description": "adds a problem"
+			},
+			"response": []
+		},
+		{
+			"name": "add theory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"criteria_id\": \"2\",\n    \"text\": \"testiteksti\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/teacher/addProblem",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"teacher",
+						"addProblem"
+					]
+				},
+				"description": "adds a problem"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "f3eca2a9-06d5-4d1f-b239-89819a637ac2",
+		"name": "kasvu common",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "modules",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/common/modules/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"common",
+						"modules",
+						""
+					]
+				},
+				"description": "gets all modules\n"
+			},
+			"response": []
+		},
+		{
+			"name": "categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/common/categories/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"common",
+						"categories",
+						"1"
+					]
+				},
+				"description": "gets all modules\n"
+			},
+			"response": []
+		},
+		{
+			"name": "criteria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/common/criteria/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"common",
+						"criteria",
+						"1"
+					]
+				},
+				"description": "gets all modules\n"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

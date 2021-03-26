@@ -7,4 +7,4 @@ This repository only holds this **Readme** file and **WIKI** site.
 ### [Kasvu WIKI](https://github.com/Kasvu/Kasvu/wiki)
 ### [Kasvu Frontend](https://github.com/Kasvu/kasvu-sote-frontend) (private)
 ### [Kasvu Backend](https://github.com/Kasvu/kasvu-sote-backend) (private)
-### [Kasvu Presenation](https://github.com/Kasvu/kasvu-presentation) (private)
+### [Kasvu Presentation](https://github.com/Kasvu/kasvu-presentation) (private)
